@@ -11,6 +11,9 @@ import IconArrowRight from '@/assets/icons/arrowRight.svg';
 import IconOctagram from '@/assets/icons/octagram.svg';
 import IconCircleSteps from '@/assets/icons/circleSteps.svg';
 import IconCircleStepsCardAndLogo from '@/assets/icons/solutionStepCardAndLogo.svg';
+import IconSolutionTechLine from '@/assets/icons/solutionTechLine.svg';
+import IconStarQuarda from '@/assets/icons/starQuarda.svg';
+import IconSparkle from '@/assets/icons/sparkle.svg';
 
 export {
   RaonLogo,
@@ -21,4 +24,7 @@ export {
   IconCircleSteps,
   IconCircleStepsCardAndLogo,
   ImgBackgroundSolutionTech,
+  IconSolutionTechLine,
+  IconStarQuarda,
+  IconSparkle,
 };
