@@ -23,7 +23,12 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         {/* <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" /> */}
       </head>
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body
+        suppressHydrationWarning
+        className={`${inter.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

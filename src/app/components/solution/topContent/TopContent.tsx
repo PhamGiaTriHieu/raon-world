@@ -31,7 +31,9 @@ const TopContent = () => {
   return (
     <div className="pt-[136px]">
       <div id="solution-title">
-        <p className="text-body-16 text-primary text-center">Solutions</p>
+        <p className="text-body-16-medium text-primary text-center">
+          Solutions
+        </p>
         <div className="max-w-[1046px] w-full mx-auto">
           <p className="heading-4 tracking-tight text-center capitalize">
             Solve complex operational problems for shipowners, liners, terminals

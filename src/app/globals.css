@@ -56,12 +56,15 @@ code {
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
+  --color-feature-nav-background: #f5f7ff;
+
   /* Colors */
   --color-black-1: #0d0f16;
   --color-black-2: #070c15;
   --color-black-3: #202342;
   --color-black-4: #161515;
   --color-black-5: #1c1c57;
+  --color-black-6: #0e0d16;
 
   --color-white: #ffffff;
 
@@ -164,10 +167,23 @@ code {
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 
+  --color-feature-nav-background: var(--color-feature-nav-background);
+
   /* Letter Spacing */
-  --letter-spacing-tight: -0.5px;
-  --letter-spacing-tighter: -0.5%;
-  --letter-spacing-tightest: -1px;
+  --letter-spacing-tight: var(--letter-spacing-tight);
+  --letter-spacing-tighter: var(--letter-spacing-tighter);
+  --letter-spacing-tightest: var(--letter-spacing-tightest);
+
+  /* color */
+  --color-black-1: var(--color-black-1);
+  --color-black-2: var(--color-black-2);
+  --color-black-3: var(--color-black-3);
+  --color-black-4: var(--color-black-4);
+  --color-black-5: var(--color-black-5);
+  --color-black-6: var(--color-black-6);
+
+  --color-neutral-1: var(--color-neutral-1);
+  --color-neutral-2: var(--color-neutral-2);
 }
 
 @layer base {
@@ -264,8 +280,12 @@ code {
   }
 
   .text-body-24-semi-bold {
-    font-size: var(--text-body-20);
-    font-weight: 500;
+    font-size: var(--text-body-24);
+    font-weight: 600;
     color: var(--color-black-1);
+  }
+
+  .bg-feature-nav-background {
+    background: var(--color-feature-nav-background);
   }
 }

@@ -4,7 +4,7 @@ import TopContent from '@/components/solution/topContent/TopContent';
 
 const Solutions = () => {
   return (
-    <div className="relative">
+    <div className="relative ">
       <BackgroundCircle />
       <Container className="mb-14">
         <TopContent />

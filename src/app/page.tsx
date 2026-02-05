@@ -19,15 +19,15 @@ export default function Home() {
         <div className="h-[497px] bg-white mt-20  mb-[154px]">
           <SubHero />
         </div>
-        <div className="mb-3 h-[1731px] overflow-hidden">
+        <div className="mb-3 h-[1731px] mb-[96px] overflow-hidden">
           <Solutions />
         </div>
-        <div className="mb-3 h-[500px] bg-neutral-400">
+        <div className="mb-3 h-[913px]">
           <Features />
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,12 +1,11 @@
 import React, {ReactNode} from 'react';
-import Image from 'next/image';
-import BgTech from '@/assets/images/bgSolutionTech.png';
 import Container from '@/components/layout/Container';
 import {
   IconSolutionTechLine,
   IconOctagram,
   IconStarQuarda,
   IconSparkle,
+  ImgBackgroundSolutionTech,
 } from '@/assets/index';
 import {cn} from '@/lib/utils';
 
@@ -44,7 +43,7 @@ const SolutionBottomContent = () => {
         <Container className="flex w-full h-full items-center gap-x-6">
           <div className="flex items-center justify-center w-[50%]">
             <div className="relative h-[518px] w-[597px] rounded-2xl">
-              <BgSolutionTech />
+              <ImgBackgroundSolutionTech className="w-full h-full" />
               <IconSolutionTechLine className="absolute top-0 left-0  w-full  h-full" />
             </div>
           </div>
@@ -75,18 +74,6 @@ const SolutionBottomContent = () => {
 const BackgroundCircle = () => {
   return (
     <div className="absolute w-[682px]  h-[682px]  bg-linear-to-tr from-[#FFFFFF] to-[#F9EBF3] rounded-full -z-10 opacity-56 -top-[345px] -right-[200px]"></div>
-  );
-};
-
-const BgSolutionTech = () => {
-  return (
-    <Image
-      src={BgTech}
-      width={597}
-      height={518}
-      className="w-full h-full rounded-2xl"
-      alt="Background Solution Tech"
-    />
   );
 };
 
