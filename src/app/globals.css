@@ -67,6 +67,7 @@ code {
   --color-black-6: #0e0d16;
 
   --color-white: #ffffff;
+  --color-card-img: #f3f3f3;
 
   --color-neutral-1: #787878;
   --color-neutral-2: #616161;
@@ -168,6 +169,7 @@ code {
   --radius-4xl: calc(var(--radius) + 16px);
 
   --color-feature-nav-background: var(--color-feature-nav-background);
+  --color-card-img: var(--color-card-img);
 
   /* Letter Spacing */
   --letter-spacing-tight: var(--letter-spacing-tight);

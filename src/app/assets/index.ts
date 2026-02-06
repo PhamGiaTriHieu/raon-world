@@ -5,6 +5,10 @@ import ImgGlobe from '@/assets/images/globe.png';
 import ImgBackgroundHero from '@/assets/images/backgroundHeroImage.png';
 import ImgBackgroundSolutionTech from '@/assets/images/backgroundTech.svg';
 import ImgFeatureVessel from '@/assets/images/featureVessel.svg';
+import ImgCompanyTopContent from '@/assets/images/companyTopContent.svg';
+import ImgCEO from '@/assets/images/CEO.svg';
+import ImgCFO from '@/assets/images/CFO.svg';
+import ImgDirector from '@/assets/images/Director.svg';
 
 // icons
 
@@ -21,6 +25,9 @@ import IconAnalyticUp from '@/assets/icons/analyticsUp.svg';
 import IconGear from '@/assets/icons/gear.svg';
 import IconInsurance from '@/assets/icons/insurance.svg';
 import IconTeamSetting from '@/assets/icons/teamSettings.svg';
+import IconAI from '@/assets/icons/AI.svg';
+import IconGlobeUser from '@/assets/icons/globeUsers.svg';
+import IconGlobeSetting from '@/assets/icons/globalSetting.svg';
 
 export {
   RaonLogo,
@@ -41,4 +48,11 @@ export {
   IconGear,
   IconInsurance,
   IconTeamSetting,
+  ImgCompanyTopContent,
+  IconAI,
+  IconGlobeUser,
+  IconGlobeSetting,
+  ImgCEO,
+  ImgCFO,
+  ImgDirector,
 };
