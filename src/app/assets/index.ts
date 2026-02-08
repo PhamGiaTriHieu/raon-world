@@ -28,6 +28,8 @@ import IconTeamSetting from '@/assets/icons/teamSettings.svg';
 import IconAI from '@/assets/icons/AI.svg';
 import IconGlobeUser from '@/assets/icons/globeUsers.svg';
 import IconGlobeSetting from '@/assets/icons/globalSetting.svg';
+import IconArrowGoRight from '@/assets/icons/arrowGoRight.svg';
+import IconLogoFooter from '@/assets/icons/logoFooter.svg';
 
 export {
   RaonLogo,
@@ -55,4 +57,6 @@ export {
   ImgCEO,
   ImgCFO,
   ImgDirector,
+  IconArrowGoRight,
+  IconLogoFooter,
 };

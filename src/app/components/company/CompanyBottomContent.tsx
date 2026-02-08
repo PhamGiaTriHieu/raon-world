@@ -1,6 +1,5 @@
-import React, {ReactNode} from 'react';
+import {ReactNode} from 'react';
 import Container from '@/components/layout/Container';
-import Image from 'next/image';
 import {ImgCEO, ImgCFO, ImgDirector} from '@/assets';
 import {cn} from '@/lib/utils';
 

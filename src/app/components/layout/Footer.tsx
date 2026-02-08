@@ -1,11 +1,12 @@
+import FooterContent from '@/components/footer/FooterContent';
 import Container from '@/components/layout/Container';
-import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-footer-background h-[606px]">
       <Container>
-        <h1>This is the footer</h1>
+        {/* <FooterContent /> */}
+        <FooterContent />
       </Container>
     </div>
   );
