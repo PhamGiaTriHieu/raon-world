@@ -32,8 +32,8 @@ const FeatureBottomContent = () => {
     <div className="mt-[112px]">
       <div id="feature-bottom-title" className="mb-20">
         <p className="text-body-16-medium text-primary text-center">Feature</p>
-        <p className="heading-3 max-w-[900px]  text-center mx-auto mt-2 leading-[120%] tracking-tight mb-[72px]">
-          Recruitment Intelligence, Engineered for Success
+        <p className="heading-3 max-w-[800px]  text-center mx-auto mt-2 leading-[120%] tracking-tight mb-[72px]">
+          Enterprise-Ready Platform, Built for Maritime Operations
         </p>
       </div>
 

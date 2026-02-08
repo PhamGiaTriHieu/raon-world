@@ -8,18 +8,21 @@ import FeatureBottomContent from '@/components/feature/FeatureBottomContent';
 
 const featureNavItem = [
   {
+    id: 1,
     title: 'Intelligent Operation System',
     icon: <IconSettingSync width={24} height={24} />,
     content:
       'Cloud-native, modular microservices platform that ingests real-time telemetry and delivers prescriptive insights through secure APIs and dashboards.',
   },
   {
+    id: 2,
     title: 'Sustainability Tools',
     icon: <IconEcoSync width={24} height={24} />,
     content:
       'Measure and optimize voyage emissions and fuel consumption with features like carbon footprint tracking, green routing, and ESG-ready reporting, leading to benefits such as lower emissions, compliance readiness, and stronger sustainability reporting.',
   },
   {
+    id: 3,
     title: 'Analytics & Insights',
     icon: <IconAnalyticUp width={24} height={24} />,
     content:
@@ -63,6 +66,7 @@ const Features = () => {
         {/* Top content */}
         <div className="mt-20">
           <FeatureTopContent
+            id={itemSelected.id}
             title={itemSelected.title}
             description={itemSelected.content}
           />

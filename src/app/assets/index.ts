@@ -5,6 +5,8 @@ import ImgGlobe from '@/assets/images/globe.png';
 import ImgBackgroundHero from '@/assets/images/backgroundHeroImage.png';
 import ImgBackgroundSolutionTech from '@/assets/images/backgroundTech.svg';
 import ImgFeatureVessel from '@/assets/images/featureVessel.svg';
+import ImgFeatureVessel2 from '@/assets/images/featureVessel2.svg';
+import ImgFeatureVessel3 from '@/assets/images/featureVessel3.svg';
 import ImgCompanyTopContent from '@/assets/images/companyTopContent.svg';
 import ImgCEO from '@/assets/images/CEO.svg';
 import ImgCFO from '@/assets/images/CFO.svg';
@@ -59,4 +61,6 @@ export {
   ImgDirector,
   IconArrowGoRight,
   IconLogoFooter,
+  ImgFeatureVessel2,
+  ImgFeatureVessel3,
 };

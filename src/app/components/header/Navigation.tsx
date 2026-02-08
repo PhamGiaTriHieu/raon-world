@@ -8,7 +8,15 @@ const Navigation = () => {
   const handleClickNavItem = (title: string) => {
     console.log(`${title} clicked`);
     setActiveNav(title);
+
+    // Scroll to section
+    const sectionId = title.toLowerCase();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
   };
+
   return (
     <nav>
       <ul className="flex gap-8">

@@ -14,19 +14,22 @@ export default function Home() {
       </div>
 
       <div id="sections">
-        <div className="h-[822px]">
+        <div id="home" className="h-[822px]">
           <Hero />
         </div>
         <div className="h-[497px] bg-white mt-20  mb-[154px]">
           <SubHero />
         </div>
-        <div className="mb-3 h-[1731px] mb-[96px] overflow-hidden">
+        <div
+          id="solutions"
+          className="mb-3 h-[1731px] mb-[96px] overflow-hidden"
+        >
           <Solutions />
         </div>
-        <div className="mb-[156px]">
+        <div id="feature" className="mb-[156px]">
           <Features />
         </div>
-        <div>
+        <div id="company">
           <Company />
         </div>
       </div>
