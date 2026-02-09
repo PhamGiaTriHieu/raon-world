@@ -10,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Raon-world solutions',
   description: 'Raon World Solutions',
+  icons: {
+    icon: '/RaonWorldFav.svg',
+  },
 };
 
 export default function RootLayout({
@@ -19,10 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        {/* <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" /> */}
-      </head>
       <body
         suppressHydrationWarning
         className={`${inter.variable} antialiased`}
