@@ -26,11 +26,29 @@ const Navigation = () => {
   const shouldShowActive = pathname !== '/contactUs';
 
   useEffect(() => {
+    const updateActiveNav = () => {
+      if (pathname !== '/contactUs') {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+          const title = hash.charAt(0).toUpperCase() + hash.slice(1);
+          setActiveNav(title);
+        } else {
+          setActiveNav('Home');
+        }
+      } else {
+        setActiveNav(null);
+      }
+    };
+
+    updateActiveNav();
+
     const handleHashChange = () => {
-      const hash = window.location.hash.substring(1);
-      if (hash && pathname !== '/contactUs') {
-        const title = hash.charAt(0).toUpperCase() + hash.slice(1);
-        setActiveNav(title);
+      if (pathname !== '/contactUs') {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+          const title = hash.charAt(0).toUpperCase() + hash.slice(1);
+          setActiveNav(title);
+        }
       }
     };
 

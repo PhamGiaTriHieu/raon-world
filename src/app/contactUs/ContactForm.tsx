@@ -31,10 +31,9 @@ const ContactForm = () => {
     setSubmitStatus('idle');
 
     try {
-      // TODO: Replace with your actual API endpoint
+      // TODO: Replace with  API endpoint
       console.log('Form data:', data);
 
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       setSubmitStatus('success');
