@@ -1,6 +1,7 @@
 import SubHero from '@/components/hero/SubHero/SubHero';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
+import ScrollToSection from '@/components/shared/ScrollToSection';
 import Company from '@/sections/Company';
 import Features from '@/sections/Features';
 import Hero from '@/sections/Hero';
@@ -9,6 +10,7 @@ import Solutions from '@/sections/Solutions';
 export default function Home() {
   return (
     <div>
+      <ScrollToSection />
       <div className="h-[100px] bg-white">
         <Header />
       </div>

@@ -32,6 +32,9 @@ import IconGlobeUser from '@/assets/icons/globeUsers.svg';
 import IconGlobeSetting from '@/assets/icons/globalSetting.svg';
 import IconArrowGoRight from '@/assets/icons/arrowGoRight.svg';
 import IconLogoFooter from '@/assets/icons/logoFooter.svg';
+import IconArrowUpRight from '@/assets/icons/arrowUpRight.svg';
+import IconEmail from '@/assets/icons/email.svg';
+import IconLocation from '@/assets/icons/location.svg';
 
 export {
   RaonLogo,
@@ -63,4 +66,7 @@ export {
   IconLogoFooter,
   ImgFeatureVessel2,
   ImgFeatureVessel3,
+  IconArrowUpRight,
+  IconEmail,
+  IconLocation,
 };

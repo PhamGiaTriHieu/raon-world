@@ -1,19 +1,59 @@
 'use client';
 import {cn} from '@/lib/utils';
-import {useState} from 'react';
+import {usePathname, useRouter} from 'next/navigation';
+import {useState, useEffect} from 'react';
 
 const Navigation = () => {
-  const [activeNav, setActiveNav] = useState('Home');
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const getInitialActiveNav = () => {
+    if (pathname === '/contactUs') return null;
+
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash.substring(1);
+      if (hash) {
+        return hash.charAt(0).toUpperCase() + hash.slice(1);
+      }
+    }
+
+    return 'Home';
+  };
+
+  const [activeNav, setActiveNav] = useState<string | null>(
+    getInitialActiveNav,
+  );
+  const shouldShowActive = pathname !== '/contactUs';
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.substring(1);
+      if (hash && pathname !== '/contactUs') {
+        const title = hash.charAt(0).toUpperCase() + hash.slice(1);
+        setActiveNav(title);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [pathname]);
 
   const handleClickNavItem = (title: string) => {
-    console.log(`${title} clicked`);
     setActiveNav(title);
 
-    // Scroll to section
     const sectionId = title.toLowerCase();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({behavior: 'smooth', block: 'start'});
+
+    if (pathname === '/contactUs') {
+      if (title === 'Home') {
+        router.push('/');
+      } else {
+        router.push(`/#${sectionId}`);
+      }
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
     }
   };
 
@@ -22,22 +62,22 @@ const Navigation = () => {
       <ul className="flex gap-8">
         <NavItem
           title="Home"
-          isActive={activeNav === 'Home'}
+          isActive={shouldShowActive && activeNav === 'Home'}
           onClick={() => handleClickNavItem('Home')}
         />
         <NavItem
           title="Solutions"
-          isActive={activeNav === 'Solutions'}
+          isActive={shouldShowActive && activeNav === 'Solutions'}
           onClick={() => handleClickNavItem('Solutions')}
         />
         <NavItem
           title="Company"
-          isActive={activeNav === 'Company'}
+          isActive={shouldShowActive && activeNav === 'Company'}
           onClick={() => handleClickNavItem('Company')}
         />
         <NavItem
           title="Feature"
-          isActive={activeNav === 'Feature'}
+          isActive={shouldShowActive && activeNav === 'Feature'}
           onClick={() => handleClickNavItem('Feature')}
         />
       </ul>

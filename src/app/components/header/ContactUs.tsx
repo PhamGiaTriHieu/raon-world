@@ -1,12 +1,14 @@
 import {Button} from '@/components/ui/button';
-import React from 'react';
+import Link from 'next/link';
 
 const ContactUs = () => {
   return (
     <div className="">
-      <Button className="w-[167px] h-[54px]">
-        <p className="text-body-16 font-medium text-white">Contact Us</p>
-      </Button>
+      <Link href="/contactUs">
+        <Button className="w-[167px] h-[54px]">
+          <p className="text-body-16 font-medium text-white">Contact Us</p>
+        </Button>
+      </Link>
     </div>
   );
 };

@@ -1,12 +1,11 @@
-import {ImgBackgroundHero} from '@/assets';
 import HeroContent from '@/components/hero/HeroContent';
 import Container from '@/components/layout/Container';
-import Image from 'next/image';
+import BgImageCustom from '@/components/shared/BgImageCustom';
 
 const Hero = () => {
   return (
     <div className="relative w-full h-full ">
-      <BGImage />
+      <BgImageCustom />
       {/* 1. pink color mix-blend */}
       {/* <div
         className="absolute top-[40%] left-[10%] w-[800px] h-[100px]
@@ -21,19 +20,6 @@ const Hero = () => {
       <Container>
         <HeroContent />
       </Container>
-    </div>
-  );
-};
-
-const BGImage = () => {
-  return (
-    <div className="absolute top-0 left-0 w-full h-full -z-10">
-      <Image
-        src={ImgBackgroundHero}
-        alt="Background Hero Image"
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/90 to-white/90 " />
     </div>
   );
 };

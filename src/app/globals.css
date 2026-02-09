@@ -67,6 +67,10 @@ code {
   --color-black-5: #1c1c57;
   --color-black-6: #0e0d16;
 
+  --color-input-bg: #f2f6ff;
+
+  --color-label-form: #4e516a;
+
   --color-white: #ffffff;
   --color-card-img: #f3f3f3;
 
@@ -172,8 +176,10 @@ code {
   --color-feature-nav-background: var(--color-feature-nav-background);
   --color-card-img: var(--color-card-img);
 
-  --color-footer-background: var(--color-footer-background);
+  --color-label-form: var(--color-label-form);
+  --color-input-bg: var(--color-input-bg);
 
+  --color-footer-background: var(--color-footer-background);
 
   /* Letter Spacing */
   --tracking-tight: var(--letter-spacing-tight);
@@ -324,5 +330,13 @@ code {
 
   .bg-feature-nav-background {
     background: var(--color-feature-nav-background);
+  }
+
+  .font-form-family {
+    font-family: var(--font-form);
+  }
+
+  .font-form {
+    font-family: var(--font-tasa-orbiter);
   }
 }
