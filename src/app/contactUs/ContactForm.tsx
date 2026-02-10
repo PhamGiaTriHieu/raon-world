@@ -23,6 +23,13 @@ const ContactForm = () => {
   >('idle');
 
   const {control, handleSubmit, reset} = useForm<ContactFormData>({
+    defaultValues: {
+      fullName: '',
+      email: '',
+      phone: '',
+      company: '',
+      notes: '',
+    },
     mode: 'onBlur',
   });
 
@@ -179,7 +186,7 @@ const ContactForm = () => {
               Office
             </p>
             <p className="text-body-16 text-black-3 text-start tracking-tightest mb-2">
-              20/3 Ky Dong, Xuan Hoa Ward, <br /> Ho Chi Minh City, Viet Nam,
+              20/3 Ky Dong, Nhieu Loc Ward, <br /> Ho Chi Minh City, Viet Nam,
               70000
             </p>
           </div>

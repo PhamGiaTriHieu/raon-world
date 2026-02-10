@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <ScrollToSection />
-      <div className="h-[100px] bg-white">
+      <div className="h-[64px] lg:h-[100px] lg:bg-white bg-mobile-bg">
         <Header />
       </div>
 

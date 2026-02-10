@@ -35,6 +35,8 @@ import IconLogoFooter from '@/assets/icons/logoFooter.svg';
 import IconArrowUpRight from '@/assets/icons/arrowUpRight.svg';
 import IconEmail from '@/assets/icons/email.svg';
 import IconLocation from '@/assets/icons/location.svg';
+import IconList from '@/assets/icons/list.svg';
+import IconClose from '@/assets/icons/close.svg';
 
 export {
   RaonLogo,
@@ -69,4 +71,6 @@ export {
   IconArrowUpRight,
   IconEmail,
   IconLocation,
+  IconList,
+  IconClose,
 };

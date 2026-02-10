@@ -3,7 +3,12 @@ import {cn} from '@/lib/utils';
 import {usePathname, useRouter} from 'next/navigation';
 import {useState, useEffect} from 'react';
 
-const Navigation = () => {
+interface INavigationProps {
+  isMobileView: boolean;
+}
+
+const Navigation = ({isMobileView}: INavigationProps) => {
+  console.log('isMobileView: ', isMobileView);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -77,26 +82,30 @@ const Navigation = () => {
 
   return (
     <nav>
-      <ul className="flex gap-8">
+      <ul className={cn('flex gap-8', isMobileView && 'flex-col mt-6')}>
         <NavItem
           title="Home"
           isActive={shouldShowActive && activeNav === 'Home'}
           onClick={() => handleClickNavItem('Home')}
+          isMobileView={isMobileView}
         />
         <NavItem
           title="Solutions"
           isActive={shouldShowActive && activeNav === 'Solutions'}
           onClick={() => handleClickNavItem('Solutions')}
+          isMobileView={isMobileView}
         />
         <NavItem
           title="Company"
           isActive={shouldShowActive && activeNav === 'Company'}
           onClick={() => handleClickNavItem('Company')}
+          isMobileView={isMobileView}
         />
         <NavItem
           title="Feature"
           isActive={shouldShowActive && activeNav === 'Feature'}
           onClick={() => handleClickNavItem('Feature')}
+          isMobileView={isMobileView}
         />
       </ul>
     </nav>
@@ -109,12 +118,14 @@ interface INavItemProps {
   title: string;
   isActive: boolean;
   onClick?: () => void;
+  isMobileView?: boolean;
 }
-const NavItem = ({title, isActive, onClick}: INavItemProps) => {
+const NavItem = ({title, isActive, onClick, isMobileView}: INavItemProps) => {
   return (
     <li
       className={cn(
         'text-body-16 font-medium text-black-5 cursor-pointer select-none',
+        isMobileView && 'h-[64px] flex items-center',
         isActive && 'text-primary',
       )}
       onClick={onClick}

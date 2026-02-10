@@ -77,6 +77,10 @@ code {
   --color-neutral-1: #787878;
   --color-neutral-2: #616161;
 
+  --color-gray-5: #e5e5ea;
+
+  --color-mobile-bg: #f4f6fa;
+
   /* typography */
   --text-heading-1: 68px;
   --text-heading-2: 64px;
@@ -180,6 +184,7 @@ code {
   --color-input-bg: var(--color-input-bg);
 
   --color-footer-background: var(--color-footer-background);
+  --color-mobile-bg: var(--color-mobile-bg);
 
   /* Letter Spacing */
   --tracking-tight: var(--letter-spacing-tight);
@@ -196,6 +201,8 @@ code {
 
   --color-neutral-1: var(--color-neutral-1);
   --color-neutral-2: var(--color-neutral-2);
+
+  --color-gray-5: var(--color-gray-5);
 }
 
 @layer base {

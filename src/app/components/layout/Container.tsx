@@ -6,7 +6,13 @@ interface IContainerProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const Container = ({children, className, ...props}: IContainerProps) => {
   return (
-    <div className={cn('mx-auto w-full max-w-[1240px]', className)} {...props}>
+    <div
+      className={cn(
+        'mx-auto w-full lg:max-w-[1240px] max-[400px] px-5',
+        className,
+      )}
+      {...props}
+    >
       {children}
     </div>
   );
