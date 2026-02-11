@@ -16,10 +16,10 @@ export default function Home() {
       </div>
 
       <div id="sections">
-        <div id="home" className="h-[822px]">
+        <div id="home" className="h-[908px] lg:h-[822px]">
           <Hero />
         </div>
-        <div className="h-[497px] bg-white mt-20  mb-[154px]">
+        <div className="h-[601px] lg:h-[497px] bg-white mt-10 lg:mt-20  lg:mb-[154px]">
           <SubHero />
         </div>
         <div

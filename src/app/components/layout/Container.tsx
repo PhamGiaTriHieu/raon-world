@@ -8,7 +8,7 @@ const Container = ({children, className, ...props}: IContainerProps) => {
   return (
     <div
       className={cn(
-        'mx-auto w-full lg:max-w-[1240px] max-[400px] px-5',
+        'mx-auto w-full lg:max-w-[1240px] max-[400px] px-5 overflow-x-hidden',
         className,
       )}
       {...props}

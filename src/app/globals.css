@@ -93,7 +93,11 @@ code {
   --text-body-20: 20px;
   --text-body-24: 24px;
   --text-body-25: 25px;
+  --text-body-26: 26px;
   --text-body-28: 28px;
+
+  /* typography Mobile */
+  --text-heading-1-mobile: 40px;
 
   /* Letter Spacing */
   --letter-spacing-tight: -0.5px;
@@ -215,15 +219,39 @@ code {
   }
 }
 
-@layer components {
-  .heading-1 {
-    font-size: var(--text-heading-1);
-    font-weight: 800;
-    letter-spacing: var(--tracking-tight);
-    line-height: 120%;
-    color: var(--color-black-1);
-  }
+@utility heading-1 {
+  font-size: var(--text-heading-1);
+  font-weight: 800;
+  letter-spacing: var(--tracking-tight);
+  line-height: 120%;
+  color: var(--color-black-1);
+}
 
+@utility heading-1-mobile {
+  font-size: var(--text-heading-1-mobile);
+  font-weight: 800;
+  letter-spacing: var(--tracking-tight);
+  line-height: 120%;
+  color: var(--color-black-1);
+}
+
+@utility heading-4 {
+  font-size: var(--text-heading-4);
+  font-weight: 800;
+  letter-spacing: var(--tracking-tight);
+  line-height: 120%;
+  color: var(--color-black-1);
+}
+
+@utility heading-4-mobile {
+  font-size: var(--text-body-26);
+  font-weight: 800;
+  letter-spacing: var(--tracking-tight);
+  line-height: 120%;
+  color: var(--color-black-1);
+}
+
+@layer components {
   .heading-2 {
     font-size: var(--text-heading-2);
     font-weight: 800;
@@ -240,13 +268,13 @@ code {
     color: var(--color-black-1);
   }
 
-  .heading-4 {
+  /* .heading-4 {
     font-size: var(--text-heading-4);
     font-weight: 800;
     letter-spacing: var(--tracking-tight);
     line-height: 120%;
     color: var(--color-black-1);
-  }
+  } */
 
   .text-body-12 {
     font-size: var(--text-body-12);

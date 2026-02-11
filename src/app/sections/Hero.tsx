@@ -4,7 +4,7 @@ import BgImageCustom from '@/components/shared/BgImageCustom';
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-full ">
+    <div className="relative w-full h-full">
       <BgImageCustom />
       {/* 1. pink color mix-blend */}
       {/* <div

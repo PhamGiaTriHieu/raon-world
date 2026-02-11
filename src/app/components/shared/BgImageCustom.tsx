@@ -11,7 +11,7 @@ const BgImageCustom = ({overlayClassName}: IBgImageCustom) => {
       <Image
         src={ImgBackgroundHero}
         alt="Background Hero Image"
-        className="w-full h-full max-h-[822px] object-cover"
+        className="w-full h-full max-h-[908px] lg:max-h-[822px] object-cover "
         loading="eager"
       />
       <div

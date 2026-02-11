@@ -7,7 +7,7 @@ import Lottie from 'lottie-react';
 
 const HeroContent = () => {
   return (
-    <div className="flex w-full h-full pt-[151px]">
+    <div className="flex w-full h-full lg:pt-[151px] pt-10 lg:flex-row flex-col gap-10 lg:gap-0 justify-between items-center">
       <HeroLeftContent />
       <HeroRightContent />
     </div>
@@ -20,7 +20,7 @@ const HeroLeftContent = () => {
   return (
     <div className="w-full ">
       <div>
-        <p className="heading-1 tracking-tight">
+        <p className="heading-1-mobile lg:heading-1 tracking-tight">
           Transforming Maritime Logistics With{' '}
           <span className="text-primary">Smart Technology</span>
         </p>
@@ -52,7 +52,7 @@ const HeroLeftContent = () => {
 const HeroRightContent = () => {
   return (
     <div className="w-full">
-      <div className="p-10">
+      <div className="lg:p-10">
         <Lottie
           key="unique-key-1"
           animationData={earthRaonAnimation}

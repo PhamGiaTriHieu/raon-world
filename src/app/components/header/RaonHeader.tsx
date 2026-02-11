@@ -55,7 +55,7 @@ const RaonHeader = () => {
               duration: 0.4,
               ease: [0.4, 0, 0.2, 1],
             }}
-            className="absolute top-[64px] right-0 bg-[#F4F6FA] border w-full z-20 overflow-hidden"
+            className="absolute top-[64px] right-0 bg-[#F4F6FA]  w-full z-20 overflow-hidden"
           >
             <Container>
               <div className="py-6">
